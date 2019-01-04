@@ -10,3 +10,5 @@ The labeled data set contains 3 classes:
 -- Iris Virginica
 
 I have used 3 Layer Neural Network to achieve an accuracy of 98%
+The dataset is the available on the following link
+https://archive.ics.uci.edu/ml/datasets/iris
