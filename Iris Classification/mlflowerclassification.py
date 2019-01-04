@@ -16,14 +16,14 @@ X= []
 Y =[]
 for i in list:
     k = i.split(",")
-    X.insert(count,k[0:3])
+    X.insert(count,k[0:4])
     Y.append(k[4])
     count= count+1
 print(X[2])
-X1 = np.zeros((150,3),dtype=float)
+X1 = np.zeros((150,4),dtype=float)
 count =0
 for i in X:
-    temp = np.zeros((1,3),dtype=float)
+    temp = np.zeros((1,4),dtype=float)
     count1 =0
     for a in i:
         temp[0][count1] =  float(a)
@@ -77,7 +77,7 @@ def layer_sizes(X1, Y2):
     n_y -- the size of the output layer
     """
     ### START CODE HERE ### (≈ 3 lines of code)
-    n_x = 3 # size of input layer
+    n_x = 4 # size of input layer
     n_h = 5
     n_y = 3 # size of output layer
     ### END CODE HERE ###
@@ -310,7 +310,7 @@ def nn_model(X, Y, n_h, num_iterations = 50000, print_cost=True):
     
     np.random.seed(3)
     ### END CODE HERE ###
-    parameters = initialize_parameters(3,5,3)
+    parameters = initialize_parameters(4,5,3)
     W1 = parameters["W1"]
     W2 = parameters["W2"]
     W3 = parameters["W3"]
